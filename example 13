@@ -16,7 +16,7 @@ public class Main
     double i = 2;
     double square = Math.pow(1+(roi/num),(num*time));
     double amount= principal*square;
-    System.out.println("After " + time + " years at " + roi + "%, the investment will be worth $" + amount);
+    System.out.println("$"+principal+" invested at " + roi + "% for " + time + " years compounded " + num + " times a year is $" + amount);
     input.close();
   }
 }
