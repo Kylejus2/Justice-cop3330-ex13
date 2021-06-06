@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main
+{
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter the principal amount: ");
+    double principal = input.nextDouble();
+    System.out.println("Enter the annual rate of interest: ");
+    double roi= input.nextDouble();
+    System.out.println("Enter the number of years the amount is invested: ");
+    double time = input.nextDouble();
+    System.out.println("Enter the number of times the interest is compounded per year: ");
+    double num = input.nextDouble();
+    double i = 2;
+    double square = Math.pow(1+(roi/num),(num*time));
+    double amount= principal*square;
+    System.out.println("After " + time + " years at " + roi + "%, the investment will be worth $" + amount);
+    input.close();
+  }
+}
